@@ -1,0 +1,28 @@
+{
+    "name": "XG Soar Responder",
+    "version": "0.1",
+    "author": "Ben Verschaeren",
+    "url": "https://github.com/0xBennyV",
+    "license": "AGPL-V3",
+    "description": "Used for connecting into the XG SOAR Connector",
+    "dataTypeList": ["thehive:case_artifact"],
+    "command": "xg-soar-responder/xg-soar-responder.py",
+    "baseConfig": "xg-soar-responder",
+    "configurationItems": [
+      {
+        "name": "xg_soar_connector_url",
+        "description": "The base URL to the Sophos XG Connector",
+        "type": "string",
+        "multi": false,
+        "required": true
+      },
+      {
+        "name": "xg_soar_connector_token",
+        "description": "The API token generated from the SOPHOS XG Connector",
+        "type": "string",
+        "multi": false,
+        "required": true
+      }
+    ]
+}
+
